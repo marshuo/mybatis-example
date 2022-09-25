@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <properties resource="db.properties">
+        <property name="username" value="root"/>
+        <property name="password" value="123456"/>
+    </properties>
+
+    <settings>
+        <setting name="logImpl" value="LOG4J2"/>
+        <!--<setting name="logImpl" value="STDOUT_LOGGING"/>-->
+    </settings>
+
+    <typeAliases>
+        <!--<typeAlias type="com.marshuo.entity.User" alias="User"/>-->
+        <package name="com.marshuo.entity"/>
+    </typeAliases>
+
+    <environments default="development">
+        <environment id="development">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="${driver}"/>
+                <property name="url"
+                          value="${url}"/>
+                <property name="username" value="${username}"/>
+                <property name="password" value="${password}"/>
+            </dataSource>
+        </environment>
+
+        <environment id="test">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="${driver}"/>
+                <property name="url"
+                          value="${url}"/>
+                <property name="username" value="${user}"/>
+                <property name="password" value="${password}"/>
+            </dataSource>
+        </environment>
+    </environments>
+
+    <mappers>
+        <!--<mapper resource="com\marshuo\mapper\UserMapper.xml"/>-->
+        <!-- 如果要使用package注意，比如mapper接口在 com.marshuo.mapper包下面，
+        那么必须在resources下面建立和包名相同的目录 com\marshuo\mapper目录，然后 *mapper.xml -->
+        <package name="com.marshuo.mapper"/>
+    </mappers>
+</configuration>
