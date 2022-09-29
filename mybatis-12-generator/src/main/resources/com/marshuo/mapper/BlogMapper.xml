@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.marshuo.mapper.BlogMapper">
+  <resultMap id="BaseResultMap" type="com.marshuo.entity.Blog">
+    <result column="id" jdbcType="VARCHAR" property="id" />
+    <result column="title" jdbcType="VARCHAR" property="title" />
+    <result column="author" jdbcType="VARCHAR" property="author" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="views" jdbcType="INTEGER" property="views" />
+  </resultMap>
+  <insert id="insert" parameterType="com.marshuo.entity.Blog">
+    insert into blog (id, title, author, 
+      create_time, views)
+    values (#{id,jdbcType=VARCHAR}, #{title,jdbcType=VARCHAR}, #{author,jdbcType=VARCHAR}, 
+      #{createTime,jdbcType=TIMESTAMP}, #{views,jdbcType=INTEGER})
+  </insert>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, title, author, create_time, views
+    from blog
+  </select>
+</mapper>
