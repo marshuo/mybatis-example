@@ -5,7 +5,7 @@
     <properties resource="db.properties"/>
 
 
-    <context id="default" targetRuntime="MyBatis3" defaultModelType="flat">
+    <context id="default" targetRuntime="MyBatis3Simple" defaultModelType="flat">
 
         <!-- 生成的 Java 文件的编码   -->
         <property name="JavaFileEncoding" value="UTF-8"/>
