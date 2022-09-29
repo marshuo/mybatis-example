@@ -1,6 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/mybatis-00/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatis-00/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatis-01-crud/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatis-01-crud/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatis-02-config/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatis-02-config/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatis-03-resultMap/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatis-03-resultMap/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatis-04-page/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatis-04-page/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatis-05-annotation/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatis-05-annotation/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatis-06-multiToOne/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatis-06-multiToOne/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatis-07-oneToMulti/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatis-07-oneToMulti/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatis-08-dynamicSQL/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatis-08-dynamicSQL/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatis-09-cache/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatis-09-cache/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatis-10-cache2/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatis-10-cache2/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatis-11-generator/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatis-11-generator/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatis-12-generator/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatis-12-generator/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

@@ -8,7 +8,6 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="mybatis-07-oneToMulti" />
-        <module name="mybatis-03-resultMap" />
         <module name="mybatis-00" />
         <module name="mybatis-02-config" />
         <module name="mybatis-05-annotation" />
@@ -17,6 +16,9 @@
         <module name="mybatis-08-dynamicSQL" />
         <module name="mybatis-01-crud" />
         <module name="mybatis-09-cache" />
+        <module name="mybatis-11-generator" />
+        <module name="mybatis-03-resultMap" />
+        <module name="mybatis-12-generator" />
         <module name="mybatis-04-page" />
       </profile>
     </annotationProcessing>

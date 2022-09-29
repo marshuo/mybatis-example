@@ -21,6 +21,8 @@
         <module>mybatis-08-dynamicSQL</module>
         <module>mybatis-09-cache</module>
         <module>mybatis-10-cache2</module>
+        <module>mybatis-11-generator</module>
+        <module>mybatis-12-generator</module>
     </modules>
 
     <properties>

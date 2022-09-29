@@ -1,0 +1,38 @@
+<!DOCTYPE generatorConfiguration PUBLIC
+        "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+    <properties resource="db.properties"/>
+
+    <context id="default" targetRuntime="MyBatis3" defaultModelType="flat">
+
+        <!-- 生成的 Java 文件的编码   -->
+        <property name="JavaFileEncoding" value="UTF-8"/>
+
+        <commentGenerator>
+            <!-- 不生成注释，默认是false -->
+            <property name="suppressAllComments" value="true"/>
+            <!-- 生成的 Java 文件的编码   -->
+            <property name="JavaFileEncoding" value="UTF-8"/>
+        </commentGenerator>
+
+        <jdbcConnection
+                driverClass="${driver}"
+                connectionURL="${url}"
+                userId="${username}"
+                password="${password}"
+        />
+
+        <!-- 使用java代码生成generator方法， targetProject参数需要添加module名称，=module名称 + /src/main/java -->
+        <javaModelGenerator targetPackage="com.marshuo.entity" targetProject="mybatis-11-generator/src/main/java"/>
+
+        <!-- *mapper.xml -->
+        <sqlMapGenerator targetPackage="com.marshuo.mapper" targetProject="mybatis-11-generator/src/main/resources"/>
+
+        <!-- mapper接口 -->
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.marshuo.mapper"
+                             targetProject="mybatis-11-generator/src/main/java"/>
+
+        <table tableName="blog" />
+    </context>
+</generatorConfiguration>
